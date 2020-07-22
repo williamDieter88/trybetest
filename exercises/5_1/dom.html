@@ -70,6 +70,11 @@ Crie uma função que mude o texto na tag <p> para uma descrição de como você
         }
         correctTitle();
 //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        function paragraphUpperCase() {
+            let paragraph = document.getElementsByTagName('p')[0];
+            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        }
+    paragraphUpperCase();
 //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
     </script>
