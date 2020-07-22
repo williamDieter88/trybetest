@@ -74,9 +74,15 @@ Crie uma função que mude o texto na tag <p> para uma descrição de como você
             let paragraph = document.getElementsByTagName('p')[0];
             paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
         }
-    paragraphUpperCase();
+        paragraphUpperCase();
 //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-
+        function showParagraphs() {
+            let paragraphs = document.getElementsByTagName('p');
+             for (let index = 0; index < paragraphs.length; index += 1) {
+                console.log(paragraphs[index].innerHTML);
+            }
+        }
+        showParagraphs();
     </script>
   </body>
 </html>
