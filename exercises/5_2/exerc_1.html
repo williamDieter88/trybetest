@@ -76,6 +76,11 @@
       const paragrafo = document.createElement("p");
       paragrafo.innerHTML = "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto";
       elementoDivCenter.appendChild(paragrafo);
+
+      //Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+      const elementoDivLeft = document.createElement("div");
+      elementoDivLeft.className = "left-content";
+      elementoDivMain.appendChild(elementoDivLeft);
     </script>
   </body>
 </html>
