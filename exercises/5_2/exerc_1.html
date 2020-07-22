@@ -66,6 +66,11 @@
       const elementoDivMain = document.createElement("div");
       elementoDivMain.className = "main-content"; // Adiciona a nova div na classe main-content, onde recebe a cor de fundo amarela e por ser uma DIV, recebe borda preta.
       document.body.appendChild(elementoDivMain);
+
+      //Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+      const elementoDivCenter = document.createElement("div");
+      elementoDivCenter.className = "center-content";
+      elementoDivMain.appendChild(elementoDivCenter); //Adiciona o elemento criado agora, como filho do elementoDivMain, criado no exercicio 2.
     </script>
   </body>
 </html>
