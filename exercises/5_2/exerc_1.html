@@ -102,6 +102,13 @@
            elementoLi.innerHTML = arrayNumbers[num];
            elementoUl.appendChild(elementoLi);
        }
+       //Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
+       for (let index = 1; index <= 3; index++) {
+           const elementoH3 = document.createElement("h3");
+           elementoH3.innerHTML = "Mostre " + index;
+           elementoDivMain.appendChild(elementoH3);
+       }
+
     </script>
   </body>
 </html>
