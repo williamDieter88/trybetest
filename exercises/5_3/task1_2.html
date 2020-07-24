@@ -64,11 +64,21 @@
                 <p>Add two lines of script to the &lt;script&gt; tag in the source of this page marked for this task (<b>lines 40 - 60</b>).  The first line should declare a new variable called <b>gamePrice</b> and should assign it the value <b>39.99</b>.  The second should declare a new variable called <b>discount</b> and assign it the value 0.20.</p>
                 
                 <p>Add a HTML button below the &lt;script&gt; tag.  Give this button an <b>onClick</b> event handler.  When the button is clicked it should multiply <b>gamePrice</b> by <b>discount</b> and present an alert box containing the phrase &quot;&pound;(result) off!&quot;.  You will need <a href="http://nptcstudents.co.uk/andrewg/jsweb/maths.html" target="_blank">concatenation</a> to achieve this.</p> 
-              
+                <!-- Img adicionada para exercício 3 -->
+                <img class="exercise3"
+                src="https://cdn.pixabay.com/photo/2015/11/17/13/13/dogue-de-bordeaux-1047521_960_720.jpg">
+
             	<script language="javascript" type="text/javascript">
-				<!-- JavaScript for task 3 here -->				
-				<!-- JavaScript for task 3 here -->
-				<!-- JavaScript for task 3 here -->
+                // Exercicio 3 For this task you will need two images of the same size. Add one image into this page using a html <img /> tag.
+                // Using the onMouseOver() and onMouseOut() event handlers try and make the image change to the second image when the mouse pointer
+                // hovers over it, and then swap back to the first image when the mouse pointer is moved off of the image.
+                const elementImg = document.querySelector(".exercise3");
+                elementImg.addEventListener('mouseover', function () {
+                    elementImg.src = "https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760_960_720.jpg";
+                });
+                elementImg.addEventListener('mouseout', function () {
+                    elementImg.src = "https://cdn.pixabay.com/photo/2015/11/17/13/13/dogue-de-bordeaux-1047521_960_720.jpg";
+                });
 				</script>
                 
                 <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp" target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
