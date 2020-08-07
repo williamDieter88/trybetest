@@ -24,3 +24,27 @@ figure {
     padding: 10px;
     
 }
+
+@media (min-width: 1000px) {
+ 
+    body {
+        background-color: rgb(163, 163, 163);
+        margin: 30px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    figure {
+        display: inline-block;
+        
+        
+    }
+
+    img {
+        max-width: 100%;
+        
+    }
+
+}
